@@ -1,0 +1,25 @@
+.sections-search {
+    .one {
+        position: relative;
+        background: url('../images/banner/bg-1.jpg') center;
+        background-size: cover;
+        height: 500px;
+    }
+    .two {
+        position: relative;
+        background: url('../images/banner/bg-9.jpg') center;
+        background-size: cover;
+        height: 500px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color-b,.7);
+        h2 {
+            font-weight: bolder !important;
+        }
+    }
+}

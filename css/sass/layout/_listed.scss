@@ -1,0 +1,84 @@
+.listed {
+    background: $color-1;
+    padding: 100px 0;
+    .list-songs {
+        background: #27203F;
+        .list-songs-header {
+            @include xl {
+                height: 25% !important;
+            }
+            
+            @include lg {
+                height: 25% !important;
+            }
+            @include md {
+                padding-top: 40px;
+                padding-bottom: 40px
+            }
+            @include sm {
+                padding-top: 40px;
+                padding-bottom: 40px
+            }
+        }
+        .list-songs-body {
+            overflow-y: scroll;
+            height: 50% !important;
+            .songs {
+                color: rgba($color-w, .5);
+                .name  {
+                    .demo-icon {
+                        line-height: 32px;
+                        cursor: pointer;
+                        color: $color-2;
+                    }    
+                }
+                &.active {
+                    color: $color-w
+                }
+            }
+        }
+        .list-songs-footer {
+            background: #1D1633;
+            @include xl {
+                height: 25% !important;
+            }
+            
+            @include lg {
+                height: 25% !important;
+            }
+            @include md {
+                padding-top: 40px;
+                padding-bottom: 40px
+            }
+            @include sm {
+                padding-top: 40px;
+                padding-bottom: 40px
+            }
+            div {
+                label {
+                    color: rgba($color-w, 0.5);
+                    font-weight: bolder;
+                }
+                span.play {
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background: $color-w;
+                    .demo-icon {
+                        color: $color-b;
+                        font-size: 20px;
+                        line-height: 50px;
+                        transition: .5s;
+                    }
+                    &:hover {
+                        .demo-icon {
+                            color: $color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

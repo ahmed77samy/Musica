@@ -1,0 +1,18 @@
+.btn-1 {
+    background: linear-gradient(to right, #cc1573, #5722a9);
+    padding: 7px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-w;
+    border-radius: 0;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none;
+    transition: .5s ease-out;
+    &:hover {
+        box-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
+    }
+    a {
+        color: inherit;
+    }
+}
